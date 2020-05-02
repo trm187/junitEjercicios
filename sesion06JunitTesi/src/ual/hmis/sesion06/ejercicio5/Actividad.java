@@ -1,9 +1,8 @@
 package ual.hmis.sesion06.ejercicio5;
 
 import java.util.ArrayList;
-import java.util.*;
 
-public class Actividad {
+public final class Actividad {
 
 	private String nombre; // nombre de la actividad
 	private ArrayList<Ejercicio> ejercicios;
@@ -15,7 +14,7 @@ public class Actividad {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public void setNombre(final String nombre) {
 		this.nombre = nombre;
 	}
 
@@ -23,35 +22,36 @@ public class Actividad {
 		return ejercicios;
 	}
 
-	public void setEjercicios(ArrayList<Ejercicio> ejercicios) {
+	public void setEjercicios(final ArrayList<Ejercicio> ejercicios) {
 		this.ejercicios = ejercicios;
 	}
+//
+//	public boolean isApta() {
+//		return apta;
+//	}
+//
+//	public void setApta(boolean apta) {
+//		this.apta = apta;
+//	}
 
-	public boolean isApta() {
-		return apta;
-	}
+//
+//	public double getPuntuacionTotal() {
+//		return this.puntuacionTotal;
+//	}
 
-	public void setApta(boolean apta) {
-		this.apta = apta;
-	}
-
-
-	public double getPuntuacionTotal() {
-		return this.puntuacionTotal;
-	}
-
-	public void setPuntuacionTotal(double value) {
+	public void setPuntuacionTotal(final double value) {
 		this.puntuacionTotal = value;
 	}
 
-	public void agregarEjercicioCalificado(String nombreEjercicio, double puntuacion) {
-
-		Ejercicio nuevoEjercicio = new Ejercicio();
-
-		nuevoEjercicio.setNombre(nombreEjercicio);
-		nuevoEjercicio.setPuntuacion(puntuacion);
-
-		ejercicios.add(nuevoEjercicio);
-	}
+//	public void agregarEjercicioCalificado(
+//	String nombreEjercicio, double puntuacion) {
+//
+//		Ejercicio nuevoEjercicio = new Ejercicio();
+//
+//		nuevoEjercicio.setNombre(nombreEjercicio);
+//		nuevoEjercicio.setPuntuacion(puntuacion);
+//
+//		ejercicios.add(nuevoEjercicio);
+//	}
 
 }
